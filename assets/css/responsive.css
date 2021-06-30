@@ -1,5 +1,18 @@
 /* Big screen :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
+    .new-area:before,.new-area:after { 
+        width: 65px;
+        height: 55%; 
+    }
+    .new-item .new-wrps {
+        width: 40%;
+        padding-left: 45px;
+    }
+    .Staff-area .all-students { 
+        width: 100%;
+    }
+
+
 
 
 }
@@ -7,6 +20,126 @@
 
 /* Normal screen :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
+    .new-area:before,.new-area:after { 
+        width: 65px;
+        height: 55%; 
+    }
+    .new-item .new-wrps {
+        width: 40%;
+        padding-left: 45px;
+    }
+    .Staff-area .all-students { 
+        width: 100%;
+    }
+    .logo-area h1 { 
+        font-size: 25px;
+        padding-left: 15px; 
+    }
+    ul.header-social li { 
+        margin-left: 5px;
+    }
+    ul.header-social li a, .menu-area nav ul li a {
+        font-size: 15px;  
+    }
+    .down-menu li { 
+        margin-right: 10px;
+    } 
+    .down-menu li a.icon img {
+        width: 28px;
+    } 
+    .down-menu li a.icon a.icon {
+        padding-right: 0;
+    }
+    .down-menu li a { 
+        font-size: 14px;
+    }
+    .loggedin p { 
+        font-size: 14px;
+    }
+    ul#myTab li.nav-item button { 
+        padding: 5px 22px; 
+    }
+    .section-title h2 {
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+    body{
+        font: 15px;
+    }
+    a.theme-btn {
+        padding: 6px 16px; 
+        font-size: 14px;
+    } 
+    .ico-blk i {
+        margin-right: 3px;
+    }
+    .ico-blk {
+        padding: 5px 10px; 
+        font-size: 14px;
+    } 
+    .quick-blk img {
+        max-height: 100px; 
+        margin-bottom: 10px;
+    }
+    .all-quick-blk .quick-blk { 
+        padding: 0 10px;
+    }
+    .plans-title h4 { 
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .new-item .new-wrps h1 { 
+        font-size: 32px;
+    } 
+    .tutorial-area h2 {
+        font-size: 22px;  
+    }
+    .t-single-tblk {
+        width: 45%; 
+    }
+    .st-blk img { 
+        width: 65px;
+        height: 65px; 
+    }
+    .st-blk { 
+        margin-top: 20px;
+    }
+    .add {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%; 
+        font-size: 36px; 
+        right: -25px; 
+    }
+    .add::after { 
+        width: 88px; 
+        font-size: 18px; 
+        line-height: 22px; 
+    }
+    .add:after { 
+        right: -95px; 
+    }
+    .Staff-area .all-students .add:after {
+        content: "Add New Teacher";
+        right: auto;
+        left: -100px;
+    }
+    .total-blk ul li span {
+        width: 70px;
+        height: 70px; 
+        font-size: 20px; 
+        margin-top: 7px;
+    }
+    .total-blk ul li { 
+        width: 31%;
+        font-size: 14px;
+    }
+    .footer-widget h4 {
+        font-size: 18px; 
+        margin-bottom: 10px;
+    }
+
+
 
 
 }
@@ -14,6 +147,174 @@
  
 /* Tablet screen :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+    body{
+        font-size: 15px;
+    }
+    .new-area:before,.new-area:after { 
+        width: 65px;
+        height: 55%; 
+    }
+    .new-item .new-wrps {
+        width: 40%;
+        padding-left: 45px;
+    }
+    .Staff-area .all-students { 
+        width: 100%;
+    }
+    .logo-area h1 { 
+        font-size: 25px;
+        padding-left: 15px; 
+    }
+    ul.header-social li { 
+        margin-left: 5px;
+    }
+    ul.header-social li a, .menu-area nav ul li a {
+        font-size: 15px;  
+    }
+    .down-menu li { 
+        margin-right: 10px;
+    } 
+    .down-menu li a.icon img {
+        width: 28px;
+    } 
+    .down-menu li a.icon a.icon {
+        padding-right: 0;
+    }
+    .down-menu li a { 
+        font-size: 14px;
+    }
+    .loggedin p { 
+        font-size: 14px;
+    }
+    ul#myTab li.nav-item button { 
+        padding: 5px 22px; 
+    }
+    .section-title h2 {
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+    body{
+        font: 15px;
+    }
+    a.theme-btn {
+        padding: 6px 16px; 
+        font-size: 14px;
+    } 
+    .ico-blk i {
+        margin-right: 3px;
+    }
+    .ico-blk {
+        padding: 5px 10px; 
+        font-size: 14px;
+    } 
+    .quick-blk img {
+        max-height: 100px; 
+        margin-bottom: 10px;
+    }
+    .all-quick-blk .quick-blk { 
+        padding: 0 10px;
+        width: 33%;
+    }
+    .plans-title h4 { 
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .new-item .new-wrps h1 { 
+        font-size: 22px;
+    } 
+    .tutorial-area h2 {
+        font-size: 22px;  
+    }
+    .t-single-tblk {
+        width: 45%; 
+    }
+    .st-blk img { 
+        width: 65px;
+        height: 65px; 
+    }
+    .st-blk { 
+        margin-top: 20px;
+    }
+    .add {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%; 
+        font-size: 36px; 
+        right: -25px; 
+    }
+    .add::after { 
+        width: 88px; 
+        font-size: 18px; 
+        line-height: 22px; 
+    }
+    .add:after { 
+        right: -95px; 
+    }
+    .Staff-area .all-students .add:after {
+        content: "Add New Teacher";
+        right: auto;
+        left: -100px;
+    }
+    .total-blk ul li span {
+        width: 70px;
+        height: 70px; 
+        font-size: 20px; 
+        margin: auto;
+        margin-top: 7px;
+    }
+    .total-blk ul li { 
+        width: 31%;
+        font-size: 14px;
+    }
+    .footer-widget h4 {
+        font-size: 18px; 
+        margin-bottom: 10px;
+    }
+    .all-students img.backgr { 
+        height: 100%; 
+    }
+    .all-students { 
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+    .Students-area {
+        padding: 40px 0;
+        padding-bottom: 40px;
+    }
+    .total-count-area .total-blk {
+        margin-top: 20px;
+    }
+    .total-count-area {
+        padding: 40px 0;
+        padding-top: 20px;
+    }
+    .t-right {
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+    .required-list ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .required-list ul li{
+        width: 50%;
+    }
+    .tutorial-area {
+        padding: 40px 0;
+    }
+    .owl-nav { 
+        top: -90px; 
+    }
+
+    .header-area {
+        padding: 20px 0;
+    }
+     
+
+
+
+
+
 
 
 }
@@ -21,12 +322,224 @@
  
 /* small screen :320px. */
 @media (max-width: 767px) {
+    body{
+        font-size: 14px;
+    }
+    #calendar { 
+        width: 500px;
+    }
+    #calendar table{
+        width: 100%;
+    }
+    .tab-pane {
+        overflow: auto;
+    }
+    .selections .nice-select {
+        float: none; 
+    }
+    .fc-header-title h2 { 
+        font-size: 20px; 
+    }
+    .new-area:before,.new-area:after { 
+        width: 20px;
+        height: 35%; 
+    }
+    .new-item{
+        flex-wrap: wrap;
+    }
+    .new-item img {
+        width: 100% !important;
+        object-fit: cover;
+        margin-top: 25px;
+    }
+    .new-item .new-wrps {
+        width: 100%;
+        padding-left: 0; 
+    }
+    .Staff-area .all-students { 
+        width: 100%;
+        padding-left: 30px;
+    }
+    .logo-area h1 { 
+        font-size: 25px;
+        padding-left: 15px; 
+    }
+    ul.header-social li { 
+        margin-left: 5px;
+    }
+    ul.header-social li a, .menu-area nav ul li a {
+        font-size: 15px;  
+    }
+    .down-menu li { 
+        margin-right: 10px;
+    } 
+    .down-menu li a.icon img {
+        width: 28px;
+    } 
+    .down-menu li a.icon a.icon {
+        padding-right: 0;
+    }
+    .down-menu li a { 
+        font-size: 14px;
+    }
+    .loggedin p { 
+        font-size: 14px;
+    }
+    ul#myTab li.nav-item button { 
+        padding: 5px 22px; 
+    }
+    .section-title h2 {
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+    body{
+        font: 15px;
+    }
+    a.theme-btn {
+        padding: 6px 16px; 
+        font-size: 14px;
+    } 
+    .ico-blk i {
+        margin-right: 3px;
+    }
+    .ico-blk {
+        padding: 5px 10px; 
+        font-size: 14px;
+    } 
+    .quick-blk img {
+        max-height: 70px;
+        margin-bottom: 5px;
+    }
+    .all-quick-blk .quick-blk { 
+        padding: 0 10px;
+        width: 50%;
+    }
+    .plans-title h4 {
+        font-size: 11px;
+        margin-bottom: 0px;
+        margin-top: 50px;
+    }
+    .new-item .new-wrps h1 {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    .tutorial-area h2 {
+        font-size: 22px;  
+    }
+    .t-single-tblk {
+        width: 100%; 
+    }
+    .st-blk img { 
+        width: 65px;
+        height: 65px; 
+    }
+    .st-blk { 
+        margin-top: 20px;
+        width: 33%;
+    }
+    .add {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        font-size: 36px;
+        right: 50%;
+        top: auto;
+        bottom: -35px;
+    }
+    .add::after { 
+        width: 88px; 
+        font-size: 18px; 
+        line-height: 22px; 
+    }
+    .add:after { 
+        right: -95px; 
+    }
+    .Staff-area .all-students .add:after {
+        content: "Add New Teacher";
+        right: auto;
+        left: -100px;
+    }
+    .total-blk ul li span {
+        width: 70px;
+        height: 70px; 
+        font-size: 20px; 
+        margin: auto;
+        margin-top: 7px;
+    }
+    .total-blk ul li { 
+        width: 31%;
+        font-size: 14px;
+    }
+    .footer-widget h4 {
+        font-size: 18px; 
+        margin-bottom: 10px;
+    }
+    .all-students img.backgr { 
+        height: 100%; 
+    }
+    .all-students {
+        padding: 20px 20px;
+        padding-bottom: 90px;
+    }
+    .Students-area {
+        padding: 40px 0;
+        padding-bottom: 40px;
+    }
+    .total-count-area .total-blk {
+        margin-top: 20px;
+    }
+    .total-count-area {
+        padding: 40px 0;
+        padding-top: 20px;
+    }
+    .t-right {
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+    .required-list ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .required-list ul li{
+        width: 100%;
+    }
+    .tutorial-area {
+        padding: 40px 0;
+    }
+    .owl-nav { 
+        top: -60px; 
+    }
 
- 
-}
- 
-/* Large Mobile screen :480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
- 
+    .header-area {
+        padding: 20px 0;
+    }
+    ul#myTab { 
+        width: 100%; 
+    }
+    .Staff-area .all-students .add {
+        right: auto;
+        left: 50%;
+    }
+    .required-list li img {
+        max-height: 60px;
+        margin-right: 10px;
+    }
+    .required-list li h5 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
 }

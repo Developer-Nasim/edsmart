@@ -92,16 +92,39 @@ li {
   z-index: 99; 
   background: #FFAC30;
 }
+.header-area hr {
+  margin-top: 25px; 
+  border-top: 1px solid #ffffff;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
 .menu-area nav ul li {
   list-style: none;
   display: inline-block;
 }
-.menu-area nav ul li a {
+ul.header-social li a, .menu-area nav ul li a {
   font-size: 18px;
   display: inline-block;
   margin-left: 30px;
   position: relative;
   font-weight: 600;
+}
+.loggedin {
+  text-align: right;
+}
+
+.loggedin p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.loggedin p i {
+  margin-left: 10px;
+}
+ul.header-social li a { 
+  margin-left: 0px;  
 }
 .menu-area nav ul li a.btnohd {
   background: #FF356B;
@@ -124,11 +147,7 @@ li {
   width: 100px;
 }
 .logo-area h1 {margin: 0;font-size: 30px;padding-left: 20px;font-weight: 700;}
-.down-menu {
-  margin-top: 25px;
-  border-top: 1px solid #ffffffa6;
-}
-
+ 
 .down-menu li {
   position: relative;
   display: inline-block;
@@ -138,6 +157,7 @@ li {
 .down-menu li a {
   display: block;
   padding: 15px 0;
+  font-weight: 500;
 }
 
 .down-menu li a i {
@@ -177,14 +197,27 @@ li {
   opacity: 1;
   top: 60px;
 }
+ul.header-social {
+  text-align: right;
+  margin-bottom: 30px;
+}
 ul.header-social li {
   display: inline-block;
   text-align: right;
   margin-left: 10px;
 }
+.middle-logo {
+  text-align: center;
+}
 
-ul.header-social {
-  text-align: right;
+.middle-logo a.logo {
+  display: block;
+  width: max-content;
+  margin: auto;
+}
+
+.middle-logo a.logo img {
+  height: 90px;
 }
 
 
@@ -223,8 +256,22 @@ ul.header-social {
   left: 0;
   transition: .3s;
   margin-left: -400px;
-  padding-left: 40px;
-  padding-top: 100px;
+  padding: 20px;
+  padding-top: 25px;
+}
+.mobile-menu p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.mobile-menu p a {
+  margin-left: 10px;
+}
+.mobile-menu a.logo {
+  display: block;
+  width: max-content;
 }
 .siteBar{
   margin-left: 0; 
@@ -238,18 +285,56 @@ ul.header-social {
   list-style: none;
   display: block;
 }
-
 .mobile-menu nav ul li a {
   color: #272835;
   font-size: 16px;
   line-height: 40px;
   transition: .3s;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 3px;
+  justify-content: space-between;
+}
+.mobile-menu nav ul li a:hover {
+  background: #3c3844;
+  color: #fff;
+}
+.mobile-menu a.logo {
+  display: block;
+  width: max-content;
 }
 
-.mobile-menu nav ul li a:hover { 
-  color: #ff4900;
+.mobile-menu nav ul li ul {
+  border-radius: 3px;
+  background: black;
+  height: 0;
+  overflow: hidden;
+  transition: .3s;
+}
+ul.header-social {
+  margin-bottom: 0px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: -15px;
+}
+.mobile-menu nav ul li a:hover {
+  background: #3c3844;
+  color: #fff;
 }
 
+.mobile-menu nav ul li ul a {
+  padding-left: 30px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.mobile-menu nav ul li:hover ul {
+  height: 100px;
+  max-height: 100px;
+  overflow: auto;
+}
 .mobile-menu ul#pills-tab li {
   display: inline-block;
 }
@@ -291,7 +376,7 @@ ul.header-social {
   top: 15px;
   width: 40px;
   height: 40px;
-  background: #ff4900;
+  background: #000000;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
@@ -376,7 +461,13 @@ thead tr.fc-first {
 
   /* == Calender css End == */
 
-
+  .dashboard-area ul.list {
+    left: auto;
+    right: 0;
+}
+ul.list{
+  width: 100%;
+}
   .section-title h2 {
     font-size: 32px;
     margin-bottom: 0;
@@ -654,8 +745,9 @@ a.theme-btn {
 .new-item .new-wrps {
   width: 40%;
 }
-.new-item  img {
+.new-item img {
   width: 55% !important;
+  object-fit: cover;
 }
 
 .new-item .new-wrps h1 {
