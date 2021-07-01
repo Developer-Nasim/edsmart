@@ -9,7 +9,7 @@
   $('select').niceSelect();
  
 
-  // Plan owlCarousel
+  //  owlCarousel
   $(".plan-slider").owlCarousel({
     loop: true,
     margin: 20,
@@ -33,14 +33,117 @@
     }
   });
 
-  // Plan owlCarousel
+  //  owlCarousel
   $(".new-slider").owlCarousel({
     loop: true, 
     items: 1, 
     dots: true, 
   });
 
+  //  owlCarousel
+  $(".rimgsld").owlCarousel({
+    loop: true, 
+    items: 3,
+    margin:15,
+    navText: [
+      '<i class="far fa-long-arrow-alt-left"></i>',
+      '<i class="far fa-long-arrow-alt-right"></i>'
+    ],
+    nav: true, 
+    dots: false, 
+    responsive: {
+      0: {
+        items: 1
+      },
+      767: {
+        items: 2
+      },
+      992: {
+        items: 3
+      }
+    }
+  });
 
+  //  owlCarousel
+  $(".rimgsld2").owlCarousel({
+    loop: true, 
+    items: 4, 
+    dots: true, 
+    margin:15,
+    navText: [
+      '<i class="far fa-long-arrow-alt-left"></i>',
+      '<i class="far fa-long-arrow-alt-right"></i>'
+    ],
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 2
+      },
+      767: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    }
+  });
+
+  //  owlCarousel
+  $(".resurse-slider").owlCarousel({
+    loop: true, 
+    items: 4, 
+    dots: true, 
+    margin:15,
+    navText: [
+      '<i class="far fa-angle-left"></i>',
+      '<i class="far fa-angle-right"></i>'
+    ],
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 2
+      },
+      767: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    }
+  });
+
+  //  owlCarousel
+  $(".user-slider").owlCarousel({
+    loop: false,
+    margin: 10,
+    items: 7,
+    navText: [
+      '<i class="far fa-long-arrow-alt-left"></i>',
+      '<i class="far fa-long-arrow-alt-right"></i>'
+    ],
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 4
+      },
+      767: {
+        items: 5
+      },
+      992: {
+        items: 7
+      }
+    }
+  });
+
+
+
+
+
+  
+  // Calendeer
   $(document).ready(function() {
     var date = new Date();
     var d = date.getDate();
@@ -183,9 +286,33 @@
 
 
   }); 
- 
 
-
+  // Circle Progress JS 
+  $(".circle_percent").each(function() {
+      var $this = $(this),
+      $dataV = $this.data("percent"),
+      $dataDeg = $dataV * 3.6,
+      $round = $this.find(".round_per");
+      $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");	
+      $this.append('<div class="circle_inbox"><span class="percent_text"></span></div>');
+      $this.prop('Counter', 0).animate({Counter: $dataV},
+    {
+      duration: 2000, 
+      easing: 'swing', 
+      step: function (now) {
+              $this.find(".percent_text").text(Math.ceil(now)+"%");
+          }
+      });
+    if($dataV >= 51){
+      $round.css("transform", "rotate(" + 360 + "deg)");
+      setTimeout(function(){
+        $this.addClass("percent_more");
+      },1000);
+      setTimeout(function(){
+        $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
+      },1000);
+    } 
+  });
 
 
 

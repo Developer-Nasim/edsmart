@@ -11,6 +11,42 @@
     .Staff-area .all-students { 
         width: 100%;
     }
+    .escedual {
+        min-width: 260px !IMPORTANT;
+    }
+    .eicons .evblks {
+        width: 75px; 
+    }
+    .pb-wrps-right {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pb-wrps-left { 
+        width: 60%;
+        padding-right: 30px;
+    }
+    ul.lastlist { 
+        margin-top: 25px;
+    }
+    .resurse-slider .owl-prev { 
+        left: -25px; 
+    }
+    .resurse-slider .owl-next { 
+        right: -25px; 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -19,7 +55,7 @@
 
 
 /* Normal screen :992px. */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) { 
     .new-area:before,.new-area:after { 
         width: 65px;
         height: 55%; 
@@ -138,7 +174,38 @@
         font-size: 18px; 
         margin-bottom: 10px;
     }
-
+    .event-wrp{
+        flex-wrap: wrap;
+    }
+    .eimg-wrps { 
+        width: 100%;
+    }
+    .eicons { 
+        margin-top: 30px;
+    } 
+    .pb-wrps-right {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pb-wrps-left { 
+        width: 80%;
+        padding-right: 30px;
+    }
+    ul.lastlist { 
+        margin-top: 25px;
+    }
+    .filter-selections .nice-select {
+        width: 17%; 
+    }
+    .resurse-slider .owl-prev { 
+        left: -25px; 
+    }
+    .resurse-slider .owl-next { 
+        right: -25px; 
+    }
+    .right-selects ul li {
+        width: 85px;
+    }
 
 
 
@@ -309,7 +376,60 @@
     .header-area {
         padding: 20px 0;
     }
-     
+    .event-wrp{
+        flex-wrap: wrap;
+    }
+    .eimg-wrps { 
+        max-width: 390px;
+    }
+    .eicons { 
+        margin-top: 30px;
+    }
+
+
+  
+    .pb-wrps-left {
+        width: 100%;
+        padding-right: 0px;
+    }
+    ul.lastlist { 
+        margin-top: 25px;
+    }
+    .filter-selections .nice-select {
+        width: 17%; 
+    }
+    .p-block { 
+        flex-wrap: wrap; 
+    }
+    ul.lastlist li { 
+        width: 95px; 
+    }
+    .right-cals a { 
+        padding: 13px 8px; 
+        margin-left: 5px; 
+    }
+    .mid-date ul li span { 
+        line-height: 28px;
+        margin: 0 15px;
+        font-size: 20px;
+    }
+    .mid-date ul {
+        justify-content: flex-end;
+    }
+    .filter-selections .nice-select {
+        width: 15%;
+        font-size: 12px;
+        padding-left: 5px;
+    }
+
+    .resurse-slider .owl-prev { 
+        left: -25px; 
+    }
+    .resurse-slider .owl-next { 
+        right: -25px; 
+    }
+
+
 
 
 
@@ -531,6 +651,144 @@
         font-weight: 600;
     }
 
+    ul.header-social {
+        margin-bottom: 0px;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: -15px;
+      }
+
+    .event-wrp{
+        flex-wrap: wrap;
+    }
+    .eimg-wrps { 
+        max-width: 100%;
+    }
+    .eicons {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .eicons .evblks {
+        width: 50%; 
+        margin-top: 20px;
+    }
+    .eimg-wrps img {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+
+    .pb-wrps-left {
+        width: 100%;
+        padding-right: 0px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .pb-wrps-left img {
+        width: 150px;
+        margin-right: 20px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    ul.lastlist {
+        margin-top: 15px;
+        flex-wrap: wrap;
+    }
+    .filter-selections .nice-select {
+        width: 17%; 
+    }
+    .p-block { 
+        flex-wrap: wrap; 
+    }
+    ul.lastlist li { 
+        width: 95px; 
+        margin-top: 20px;
+    }
+    .right-cals a { 
+        padding: 13px 8px; 
+        margin-left: 5px; 
+    }
+    .mid-date ul li span { 
+        line-height: 28px;
+        margin: 0 15px;
+        font-size: 20px;
+    }
+    .mid-date ul {
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .filter-selections .nice-select {
+        width: 100%;
+        font-size: 12px;
+        padding-left: 5px;
+        margin-bottom: 10px;
+    }
+    .pb-wrps-right {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .left-cal { 
+        margin: auto;
+        margin-top: 30px;
+    }
+    .right-cals { 
+        justify-content: center !important;
+        margin-bottom: 20px;
+    }
+    .days ul { 
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    .days ul li {
+        width: 33%;
+        text-align: center;
+    }
+    .filter-selections { 
+        flex-wrap: wrap;
+    }
+    .btnss a  {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    .rudin-tbl table {
+        width: 900px;
+    }
+    .cradits-area h4 img {
+        margin-top: -8px;
+        margin-left: 6px;
+        width: 34px;
+    }
+    .resurse-slider .owl-prev {
+        left: -8px;
+        color: #000;
+    }
+    .resurse-slider .owl-next { 
+        right: -8px; 
+        color: #000;
+    }
+    .rs-item p { 
+        font-size: 16px;
+        line-height: 20px; 
+    }
+    .lrb-btn { 
+        flex-wrap: wrap;
+    }
+    .lrb-btn .nice-select {
+      width: 100%;
+      margin: 0 10px;
+      background: #0C8B8D;
+      color: #fff;
+    }
+
+    .assins-list {
+        display: block; 
+    }
+    .right-selects ul { 
+        justify-content: left;
+        margin-top: 15px;
+    }
 
 
 
@@ -540,6 +798,4 @@
 
 
 
-
-    
 }

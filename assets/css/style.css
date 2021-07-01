@@ -4,8 +4,15 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400; 
   color: #000000;
-  font-size: 16px; }
+  font-size: 16px; 
+}
 
+.body-back{
+  background-image: url(../img/body-back.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
   
 button {
   cursor: pointer; }
@@ -313,12 +320,6 @@ ul.header-social li {
   overflow: hidden;
   transition: .3s;
 }
-ul.header-social {
-  margin-bottom: 0px;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: -15px;
-}
 .mobile-menu nav ul li a:hover {
   background: #3c3844;
   color: #fff;
@@ -566,12 +567,21 @@ a.theme-btn {
   background: #2264D1;
   border-radius: 100px;
   font-size: 14px;
+  color: #fff;
 }
 
 .ico-blk i {
   margin-right: 15px;
 }
-
+.dashboard-area button.theme-btn {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background: #F9B751;
+  font-weight: 600;
+}
 
 
 
@@ -682,7 +692,7 @@ a.theme-btn {
   width: 45px;
   margin-left: 15px;
 }
-.owl-nav {
+.plans-area .owl-nav {
   position: absolute;
   top: -42px;
   left: 0;
@@ -691,7 +701,7 @@ a.theme-btn {
   justify-content: space-between;
   width: 100%;
 } 
-.owl-nav div {
+.plans-area .owl-nav div {
   background: #F08C4D;
   color: #FFFFFF;
   width: 40px;
@@ -702,7 +712,7 @@ a.theme-btn {
   border-radius: 50%;
   position: relative;
 } 
-.owl-nav .owl-prev:after {
+.plans-area .owl-nav .owl-prev:after {
   content: "Previous Day";
   left: 55px;
   position: absolute;
@@ -711,7 +721,7 @@ a.theme-btn {
   width: 110px;
   font-weight: 500;
 }
-.owl-nav .owl-next:after {
+.plans-area .owl-nav .owl-next:after {
   content: "Next Day";
   right: 55px;
   position: absolute;
@@ -720,9 +730,38 @@ a.theme-btn {
   width: 71px;
   font-weight: 500;
 }
+.sldtm {
+  text-align: center;
+}
 
+.sldtm span {
+  margin-top: 10px;
+  display: block;
+  line-height: 20px;
+}
 
+.rmitm span {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.rimgsld .owl-nav,.rimgsld2 .owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+ul.co-list li {
+  display: flex;
+  align-items: center;
+}
 
+ul.co-list li span {
+  margin-right: 10px;
+  color: #4CA3D8;
+}
 
 
 
@@ -1216,6 +1255,1098 @@ p.copyright-text {
 
 
 
+
+/* ======================================================
+      Home page END and School Calender Page STARTED
+====================================================== */
+
+
+
+
+
+
+
+
+.event-wrp {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background: linear-gradient(70deg, #88a0b778, #88a0b778, #88a0b752, #88a0b700, transparent);
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to left, #ffffff, #3c3844);
+  padding: 20px 15px;
+}
+.eimg-wrps {
+  display: flex;
+  align-items: end;
+  max-width: 440px;
+}
+.eimg-wrps img {
+  width: 150px;
+  margin-right: 10px;
+}
+.eimg-conts p {
+  margin: 0;
+  margin-top: 10px;
+}
+.escedual li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.escedual li i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.eicons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.eicons .evblks {
+  width: 120px;
+  text-align: center;
+}
+
+.eicons .evblks img {
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+.eicons .evblks p {
+  margin: 0;
+  line-height: 20px;
+}
+.event-area .section-title {
+  margin-bottom: 40px;
+}
+
+
+
+
+
+/* ======================================================
+      Calender page END and School Plan Page STARTED
+====================================================== */
+
+
+
+
+
+
+
+
+/* Learning-plan-area  STARTED */
+
+
+
+
+
+.learning-plan-area {
+  padding: 60px 0;
+}
+
+.left-cal {
+  background: #2CDADD;
+  border: 1px solid #5787A4;
+  border-radius: 5px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  line-height: 16px;
+  width: max-content;
+}
+
+.left-cal i {
+  margin-right: 10px;
+}
+
+.mid-date {
+  text-align: center;
+}
+
+.mid-date ul {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.mid-date ul li {
+  font-size: 28px;
+  color: #A3A3A3;
+}
+
+.mid-date ul li span {
+  display: block;
+  color: #000;
+  line-height: 36px;
+  margin: 0 40px;
+}
+
+.right-cals {
+  display: flex;
+  align-items: center;
+}
+
+.right-cals a {
+  transition: .3s;
+  padding: 22px 30px;
+  background: transparent;
+  margin-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #DADADA;
+}
+
+.right-cals a:hover,.right-cals a.active {
+  background: #2CDADD;
+}
+.days {
+  background: #2cdadd70;
+  border-radius: 10px;
+  overflow: hidden !important;
+}
+.days ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.days ul li {
+  width: 20%;
+  text-align: center;
+}
+
+.days ul li a {width: 100%;text-align: center;display: block;padding: 10px;position: relative;}
+.days ul li a span {
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.days ul li a span {
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.filters {
+  background: #2CDADD;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.filters h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+}
+
+.filter-selections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-selections button {
+  border: none;
+  padding: 5px 15px;
+  background: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.filter-selections  .nice-select {
+  width: 19%;
+  background: transparent;
+  border-color: black;
+} 
+.p-block {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.pb-wrps-left {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding-right: 25px;
+}
+.pb-wrps-left img {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.pb-wrps-content h5 {
+  color: #B65741;
+  margin-bottom: 15px;
+}
+
+.pb-wrps-content p {
+  margin: 0;
+  color: #6E798C;
+}
+
+.pb-wrps-right {
+  display: flex;
+}
+.scheduls {
+  display: flex;
+  align-items: center;
+}
+
+.scheduls ul li {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 5px 0;
+}
+
+.scheduls ul li span {
+  font-weight: 600;
+}
+
+.scheduls ul li i {
+  width: 22px;
+}
+.btnss {
+  margin-left: 20px;
+}
+
+.btnss a {
+  display: block;
+  margin: 10px 0;
+  width: max-content;
+  border-radius: 5px;
+}
+ul.lastlist {
+  display: flex;
+}
+ul.lastlist li {
+  text-align: center;
+  width: 105px;
+  padding: 0 5px;
+  line-height: 20px;
+}
+ul.lastlist li img {
+  display: block;
+  height: 60px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+/* modal-content start */
+.modal-dialog {
+  max-width: 100%; 
+  margin: 0;
+}
+ .modal { 
+  padding-right: 0 !important;
+}
+.modal-header { 
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: #FFAC30;
+}
+.modal-title{
+  color: #fff;
+}
+.modal-header button {
+  padding: 0;
+  border: none;
+  background: no-repeat;
+  color: #fff;
+  font-size: 25px;
+}
+.modal-header button {
+  padding: 0;
+  border: none;
+  background: no-repeat;
+  color: #fff;
+  font-size: 25px;
+}
+
+.ltitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.ltitle h4 {
+  margin: 0;
+}
+
+.ltitle h4 span {
+  display: block;
+  margin-top: 5px;
+  color: #4CA3D8;
+}
+ul.filst li b {
+  width: 140px;
+  display: inline-block;
+  padding-top: 10px;
+}
+.lblk .img span img {
+  display: block;
+  margin-bottom: -15px;
+}
+
+.lblk .img span {
+  display: inline-block;
+  text-align: center;
+  color: #4CA3D8;
+}
+
+ul.lilist li {
+  display: flex;
+  align-items: center;
+  width: 225px;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #B65741;
+}
+
+ul.lilist li img {
+  width: 100px;
+}
+
+ul.liquicks li {
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+  line-height: 18px;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+ul.liquicks li img {
+  height: 66px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+ul.litags li {
+  display: inline-block;
+}
+
+ul.litags li a {
+  background: #FFAC30;
+  padding: 7px 15px;
+  border-radius: 4px;
+  color: #fff;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+ul.litags.grn li a {
+  background: #3DD598;
+}
+ul.liprg li {
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+}
+
+ul.liprg li .prctn {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+ul.liprg li .prg {
+  width: 100%;
+  display: block;
+  height: 15px;
+  border-radius: 100px;
+  background: #e8e8e8;
+  position: relative;
+}
+
+ul.liprg li .prg .prg-control {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 25px;
+  height: 100%;
+  border-radius: 100px;
+  background: #FFAC30;
+}
+.act-right {
+  padding-top: 25px;
+}
+
+
+
+
+
+
+
+/* Learning-plan-area END and Rutin-area STARTED */
+
+
+
+.cradits-area {
+  background: linear-gradient(-0deg, #FF356B, #ffffff00);
+  padding-top: 60px;
+}
+
+.cradits-area h4 img {
+  margin-top: -40px;
+  margin-left: 15px;
+}
+.rutin-area {
+  padding: 60px 0;
+  background: #2CDADD;
+}
+
+.rutin-header {
+  background: #0C8B8D;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.rutin-header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rutin-header ul li{
+  display: block;
+}
+.rutin-header ul li:nth-child(2){
+  margin: 0 50px;
+}
+.rutin-header ul li a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.rutin-blk {
+  margin-top: 15px;
+}
+
+.rudin-tbl {
+  background: #fff;
+  border-radius: 5px;
+  overflow: auto;
+}
+.rudin-tbl table {
+  width: 100%;
+}
+
+.rudin-tbl table tr th, .rudin-tbl table tr td {padding: 10px;font-weight: 500;background: #fff;}
+
+.rudin-tbl table tr th span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.rudin-tbl table tr td img {display: block;}
+
+.rudin-tbl table tr th {
+  text-align: center;
+  border-right: 1px solid #2CDADD;
+}
+
+.rudin-tbl table tr td {
+  border: 1px solid #2CDADD;
+  color: #B65741; 
+}
+
+/* Rutin-area STARTED */
+
+
+
+
+
+
+/* ======================================================
+      Plan page END and  Resources Page STARTED
+====================================================== */
+
+
+
+
+
+
+
+
+
+.resurse-slider {
+  position: relative;
+} 
+.resurse-slider .owl-prev {
+  position: absolute;
+  top: 40%;
+  left: -50px;
+  transform: translateY(-50%);
+  font-size: 58px;
+  color: #81868C;
+}
+.resurse-slider .owl-next {
+  position: absolute;
+  top: 40%;
+  right: -50px;
+  transform: translateY(-50%);
+  font-size: 58px;
+  color: #81868C;
+}
+.rs-item {
+  text-align: center;
+}
+
+.rs-item p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.lrb-btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.lrb-btn .nice-select {
+  width: 400px;
+  margin: 0 10px;
+  background: #0C8B8D;
+  color: #fff;
+}
+
+.lrb-btn .nice-select li.option {
+  color: #000;
+}
+.iism {
+  margin-bottom: 30px;
+}
+.resourceslibrary-area {
+  margin-bottom: 60px;
+}
+
+.action-area {
+  padding: 60px 0;
+  padding-top: 35px;
+  position: relative;
+}
+
+.action-area .quick-link-wrp h4 {
+  margin-bottom: 45px;
+}
+
+.action-area:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #ffac3075;
+}
+.resources-plan-area {
+  padding: 60px 0;
+}
+
+
+
+
+
+
+
+/* ======================================================
+      Resources page END and Assessments Page STARTED
+====================================================== */
+
+
+
+
+
+
+.assessments-plan-area {
+  padding: 60px 0;
+}
+.switch_box{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;   
+}
+
+.switch_box input[type="checkbox"].switch_1{
+	font-size: 30px;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	width: 3.5em;
+	height: 1.5em;
+	background: #ddd;
+	border-radius: 10px;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out; 
+  box-shadow: inset -2.4px -2.4px 5.99px #fff;
+  }
+  
+  .switch_box input[type="checkbox"].switch_1:checked{
+	background: #ffac30;
+  }
+  
+  .switch_box input[type="checkbox"].switch_1:after{
+	position: absolute;
+	content: "";
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 8px;
+	background: #fff;
+	-webkit-box-shadow: 0 0 .25em rgba(0,0,0,.3);
+	        box-shadow: 0 0 .25em rgba(0,0,0,.3);
+	-webkit-transform: scale(.7);
+	        transform: scale(.7);
+	left: 0;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+  }
+  
+  .switch_box input[type="checkbox"].switch_1:checked:after{
+	left: calc(100% - 1.5em);
+  }
+	
+
+  .ublk {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .ublk input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .ublk label {
+    position: relative;
+    cursor: pointer;
+  } 
+  .ublk input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    right: 5px;
+    width: 10px;
+    height: 20px;
+    border: solid #37833B;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+    z-index: 3;
+}
+  .assessments-plan-area  ul#myTab {
+    background: #143D59;
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.switch_box label {
+  font-size: 22px;
+  width: 230px;
+}
+.right-selects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.right-selects ul li {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+.right-selects ul li:first-child{
+  width: 150px;
+}
+.right-selects ul span {
+  font-size: 20px;
+  display: block;
+}
+
+.right-selects ul a {
+  font-size: 13px;
+  display: block;
+}
+
+.right-selects ul a img {
+  display: block;
+  text-align: center;
+  margin: auto;
+  height: 75px;
+}
+.ublk label {
+  display: block;
+}
+
+.ublk label img {
+  display:  block;
+  width: 100%;
+  height: 85px;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 1px solid #2cdadd;
+  object-fit: cover;
+}
+
+.user-slider .owl-nav .owl-prev,.user-slider .owl-nav .owl-next {
+  width: 60px;
+  height: 60px;
+  background: #F08C4D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -80px;
+  transform: translateY(-50%);
+}
+
+.user-slider .owl-nav .owl-next {
+  left: auto;
+  right: 0;
+}
+.assins-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.assins-blk {
+  display: flex;
+  align-items: center;
+}
+
+.assins-blk h5 {
+  margin: 0;
+  color: #B65741;
+  width: 110px;
+}
+
+.assins-blk img {
+  width: 125px;
+  margin-right: 20px;
+}
+.mr0{
+  margin: 0;
+}
+.brd{
+  border-top: 1px solid #FF575F;
+  border-bottom: 1px solid #FF575F;
+}
+.right-selects ul li svg {
+  width: 90px;
+  height: 90px;
+}  
+.right-selects.prgss ul li:first-child {
+  width: 100px;
+}
+.right-selects.prgss ul li:first-child {
+  width: 100px;
+} 
+
+
+
+
+
+.circle_percent {
+  font-size: 80px;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  background: #2cdadd;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-left: 0;
+}
+.circle_inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1em;
+  height: 1em;
+  clip:rect(0 1em 1em .5em);
+}
+.round_per {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1em;
+  height: 1em;
+  background: #FFC542;
+  clip:rect(0 1em 1em .5em);
+  transform:rotate(180deg);
+  transition:1.05s;
+  }
+  .percent_more .circle_inner {
+  clip:rect(0 .5em 1em 0em);
+}
+.percent_more:after {
+  position: absolute;
+  left: .5em;
+  top:0em;
+  right: 0;
+  bottom: 0;
+  background: #FFC542;
+  content:'';
+}
+.circle_inbox {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: #2cdadd;
+  z-index:3;
+  border-radius: 50%;
+}
+.percent_text {
+  position: absolute;
+  font-size: 36px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 3;
+}
+.user-slider {
+  margin-top: 30px;
+}
+
+
+
+ 
+.right-selects.prgss ul.blue .circle_percent,.right-selects.prgss ul.blue .circle_inbox {
+  background: #190DC5;
+  color: #fff;
+} 
+.right-selects.prgss ul.blue .round_per, .right-selects.prgss ul.blue .percent_more:after{
+  background: #D81E1E;
+}
+ 
+.right-selects.prgss ul.blueDark .circle_percent,.right-selects.prgss ul.blueDark .circle_inbox {
+  background: #084C8C;
+  color: #fff;
+} 
+.right-selects.prgss ul.blueDark .round_per, .right-selects.prgss ul.blueDark .percent_more:after{
+  background: #D81E1E;
+}
+
+.right-selects.prgss ul.black .circle_percent,.right-selects.prgss ul.black .circle_inbox {
+  background: #2C2F33;
+  color: #fff;
+} 
+.right-selects.prgss ul.black .round_per, .right-selects.prgss ul.black .percent_more:after{
+  background: #4AB272;
+}
+
+.right-selects.prgss ul.pirple .circle_percent,.right-selects.prgss ul.pirple .circle_inbox {
+  background: #741FB7;
+  color: #fff;
+} 
+.right-selects.prgss ul.pirple .round_per, .right-selects.prgss ul.pirple .percent_more:after{
+  background: #4AB272;
+}
+
+
+
+
+/* ======================================================
+      Home page END and School Calender Page STARTED
+====================================================== */
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================
+      Home page END and School Calender Page STARTED
+====================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================
+      Home page END and School Calender Page STARTED
+====================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================
+      Home page END and School Calender Page STARTED
+====================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================
+      Home page END and School Calender Page STARTED
+====================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================
+      Home page END and School Calender Page STARTED
+====================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================
+      Home page END and School Calender Page STARTED
+====================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================
+      Home page END and School Calender Page STARTED
+====================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================
+      Home page END and School Calender Page STARTED
+====================================================== */
 
 
 
