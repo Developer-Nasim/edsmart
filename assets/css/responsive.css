@@ -789,8 +789,12 @@
         justify-content: left;
         margin-top: 15px;
     }
-
-
+    .plan-main-item h4.crtl { 
+        margin-top: 60px;
+    }
+    .plans-area .owl-nav { 
+        top: 10px; 
+    }
 
 
 

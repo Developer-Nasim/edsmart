@@ -640,7 +640,10 @@ a.theme-btn {
   background-size: cover;
   background-position: center;
 }
-
+.plan-main-item h4.crtl {
+  text-align: center;
+  margin-top: 20px;
+}
 .plans-title {
   display: flex;
   align-items: center;
@@ -1644,6 +1647,7 @@ ul.litags li a {
   border-radius: 4px;
   color: #fff;
   margin-right: 8px;
+  margin-top: 8px;
   display: inline-block;
 }
 
@@ -1931,12 +1935,15 @@ ul.liprg li .prg .prg-control {
   }
 	
 
-  .ublk {
+
+
+
+  .ckbX {
     position: relative;
     margin-bottom: 10px;
   }
   
-  .ublk input {
+  .ckbX input {
     padding: 0;
     height: initial;
     width: initial;
@@ -1945,11 +1952,11 @@ ul.liprg li .prg .prg-control {
     cursor: pointer;
   }
   
-  .ublk label {
+  .ckbX label {
     position: relative;
     cursor: pointer;
   } 
-  .ublk input:checked + label:after {
+  .ckbX input:checked + label:after {
     content: '';
     display: block;
     position: absolute;
@@ -1961,14 +1968,27 @@ ul.liprg li .prg .prg-control {
     border-width: 0 4px 4px 0;
     transform: rotate(45deg);
     z-index: 3;
-}
-  .assessments-plan-area  ul#myTab {
-    background: #143D59;
-    width: 100%;
-    padding: 8px;
+  }
+  label img{
+    transition: .3s;
+  }
+  .right-selects .ckbX input:checked + label img {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 22px 0px #78788578;
     border-radius: 10px;
-    margin-bottom: 20px;
-    justify-content: space-between;
+    background: transparent;
+}
+.right-selects .ckbX input:checked + label:after{
+  display: none;
+}
+ 
+.assessments-plan-area  ul#myTab {
+  background: #143D59;
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
 }
 .switch_box label {
   font-size: 22px;
@@ -2144,8 +2164,11 @@ ul.liprg li .prg .prg-control {
   z-index: 3;
 }
 .user-slider {
-  margin-top: 30px;
-}
+  margin-top: 30px; 
+  max-width: 630px;
+  margin-left: auto;
+  margin-right: 20px;
+  }
 
 
 
