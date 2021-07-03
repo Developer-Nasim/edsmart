@@ -2007,7 +2007,7 @@ ul.liprg li .prg .prg-control {
   width: 100px;
   text-align: center;
 }
-.right-selects ul li:first-child{
+.right-selects ul li.flsttt{
   width: 150px;
 }
 .right-selects ul span {
@@ -2168,11 +2168,13 @@ ul.liprg li .prg .prg-control {
 }
 .user-slider {
   margin-top: 30px; 
-  max-width: 630px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: 20px;
   }
-
+  .gsallclsosdata{
+    overflow: auto;
+  }
 
 
  
@@ -3064,10 +3066,7 @@ ul.prd li img {
 
 
 
-
-
-
-
+ 
 
 .resourceslibrary-area.help {
   padding: 60px 0;

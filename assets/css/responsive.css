@@ -34,12 +34,25 @@
     .resurse-slider .owl-next { 
         right: -25px; 
     }
+    .user-slider { 
+        max-width: 550px; 
+    }
+    .assins-list .right-selects ul li {
+        margin-left: 8px;
+    }
+    .datas:first-child {
+        width: 140px;
+    }
+    .datas:nth-child(2) {
+        width: 130px;
+    }
+    .datas:nth-child(3) {
+        width: 290px;
+    }
 
-
-
-
-
-
+    .flter { 
+        flex-wrap: wrap;
+    }
 
 
 
@@ -206,6 +219,24 @@
     .right-selects ul li {
         width: 85px;
     }
+
+    .user-slider { 
+        max-width: 550px; 
+    }
+    .assins-list .right-selects ul li {
+        margin-left: 8px;
+    }
+    .allclsosdata { 
+        width: 1220px;
+    } 
+    .flter { 
+        flex-wrap: wrap;
+    }
+    ul.filtering { 
+        flex-wrap: wrap;
+    }
+
+
 
 
 
@@ -443,6 +474,45 @@
         display: block; 
         margin-top: 20px;
     }
+
+    .assins-list { 
+        flex-wrap: wrap;
+    }
+    .right-selects {
+        display: block;
+        margin-left: auto;
+        margin-top: 20px;
+    } 
+    .allclsosdata { 
+        width: 1220px;
+    }  
+    .flter { 
+        flex-wrap: wrap;
+    }
+    .report-details-area .section-title {
+        margin-top: 0;
+    } 
+    .assimg { 
+        width: 45%;
+    }
+    .assimg img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .asswrp h3 {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+    .block-title .section-title {
+        width: 70%;
+    }
+    .tmns a.theme-btn {
+        max-width: 250px; 
+        margin-left: 50px;
+    }
+
+
 
 
 
@@ -829,6 +899,121 @@
     footer {
         padding-top: 30px; 
     }
+    .switch_box label {
+        font-size: 16px;
+        width: 180px;
+    }
+    .right-selects {
+        margin-top: 30px;
+    }
+    
+    .right-selects ul li.flsttt span {
+        font-size: 16px;
+    }
+    .right-selects ul li { 
+        width: 85px; 
+    } 
+    .assins-blk img {
+        width: 80px;
+        margin-right: 15px;
+    }
+    .assins-blk h5 { 
+        width: auto;
+    }
+    .resourceslibrary-area.help {
+        padding: 30px 0; 
+    }
+    .resources-plan-area {
+        padding: 30px 0;
+    }
+
+    .allclsosdata { 
+        width: 1220px;
+    } 
+    .flter { 
+        flex-wrap: wrap;
+    }
+    .report-details-area .section-title {
+        margin-top: 0;
+    } 
+    .det-blk h4 { 
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .det-blk h4 img {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .ass-blk {
+        flex-wrap: wrap;
+    }
+
+    .assimg {
+        padding: 0;
+    }
+
+    .asswrp {
+        padding: 20px;
+    }
+    .block-title {
+        flex-wrap: wrap;
+    }
+
+    .rang-blk { 
+        flex-wrap: wrap;
+    }
+    .slider {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .cwrp a.theme-btn {
+        text-align: center; 
+        width: 100%; 
+    }
+    .tmns { 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tmns ul#myTab {
+        margin: 0;
+        margin-bottom: 15px;
+    } 
+    .tmns a.theme-btn {
+        max-width: 100%; 
+        margin-left: 0px;
+    } 
+    .vreq ul { 
+        flex-wrap: wrap;
+    }
+    .vreq ul li {
+        margin-top: 5px;
+        padding-left: 22px;
+    }
+    .meteg-sld .owl-nav { 
+        top: -50px; 
+    }
+    .meategs-blk { 
+        padding: 20px; 
+    }
+    .meategs-blk h4 {
+        font-size: 24px;
+    }
+    .mats-blk { 
+        margin-bottom: 70px;
+    }
+
+    .bmn ul { 
+        flex-wrap: wrap;
+    }
+    .bmn ul li { 
+        width: 120px; 
+        margin-top: 20px;
+    }
+
+
+
 
 
 

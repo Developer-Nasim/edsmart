@@ -200,7 +200,8 @@
     dots: false,
     responsive: {
       0: {
-        items: 1
+        items: 1,
+        stagePadding: 0,
       },
       767: {
         items: 1
