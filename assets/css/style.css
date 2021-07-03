@@ -1770,7 +1770,10 @@ ul.liprg li .prg .prg-control {
   border: 1px solid #2CDADD;
   color: #B65741; 
 }
-
+.rudin-tbl table tr td:first-child{
+  text-align: center;
+  color: #000;
+}
 /* Rutin-area STARTED */
 
 
@@ -2208,13 +2211,52 @@ ul.liprg li .prg .prg-control {
 
 
 
-/* ======================================================
-      Home page END and School Calender Page STARTED
-====================================================== */
+/* ==================================================================
+          Assessments page END and Reports Page STARTED
+=================================================================== */
 
 
 
 
+ 
+
+.reports-area {
+  padding: 60px 0;
+}
+
+.chartTitle {
+  background: #2cdadd82;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.chartTitle p {
+  margin: 0;
+}
+
+.chartTitle h4 {
+  margin-bottom: 5px;
+}
+.cwrp {
+  margin-top: 20px;
+}
+
+.cwrp h4 {
+  margin-bottom: 20px;
+}
+
+.cwrp  a.theme-btn {
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: max-content;
+  border-radius: 5px;
+  padding: 15px 30px;
+  margin-top: 40px;
+  color: black;
+  background: #FF356B;
+}
  
 
 
@@ -2226,9 +2268,797 @@ ul.liprg li .prg .prg-control {
 
 
 
+.dev-rep {
+  padding: 30px;
+  border-radius: 5px;
+  background: #2cdadd78;
+  margin: 20px 0;
+}
+.rang-blk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  padding: 15px 0;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+.rang-blk .rnifo {
+  display: flex;
+  align-items: center;
+}
+
+.rang-blk .rnifo h5 {
+  margin: 0;
+  margin-left: 10px;
+  width: 150px;
+  color: #B65741;
+}
+
+.rang-blk .Range.noUi-target {
+  transform: rotate(90deg);
+  top: -25px;
+  right: -110px;
+  z-index: 2;
+}
+.dev-rep .nice-select {
+  background: #FFAC30;
+} 
+.slider {
+  width: 45%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: inset -3px 2px 4px 1px #c7c7c7;
+  position: relative;
+  margin-bottom: 0 !important;
+}
+
+.slider:after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 5px;
+  background: linear-gradient(45deg, #FF0C3D, #FFC542,#3DD598,#3DD598);
+  top: 50%;
+  left: 50%;
+  border-radius: 100px;
+  transform: translate(-50%,-50%);
+}
+
+.slider span.ui-slider-handle {
+  background: #EEEEEE;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 30px;
+  box-shadow: 4px 4px 10px #cdcdcd;
+}
+
+.slider span.ui-slider-handle:before,.slider span.ui-slider-handle:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 65%;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 100px;
+  box-shadow: inset 0px 0px 11px -7px #524646;
+}
+.slider span.ui-slider-handle:after{
+  left: 60%;
+}
+.ui-slider-pips .ui-slider-line {
+  background: #0000002b;
+  width: 3px;
+  height: 6px;
+  position: absolute;
+  left: 50%;
+  border-radius: 100px;
+  box-shadow: inset -1.4px 1.4px 1.4px #ffffff87;
+}
+.ui-slider-pips [class*=ui-slider-pip-selected] .ui-slider-line, .ui-slider-pips .ui-slider-pip-inrange .ui-slider-line {
+  background: #3dd598;
+}
+.recom-wrp {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.recom-wrp a.theme-btn {
+  max-width: 390px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 10px 50px;
+  border-radius: 5px;
+  background: #FF356B;
+  color: #000;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
 
 /* ======================================================
-      Home page END and School Calender Page STARTED
+      Report page END and Reposrt-Grouth Page STARTED
+====================================================== */
+
+
+
+
+
+
+
+.report-grouth-area {
+  padding: 60px 0;
+}
+
+ul.filtering {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul.filtering li {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+ul.filtering li span.ftl {
+  display: block;
+  font-weight: 500;
+  margin-right: 30px;
+}
+
+ul.filtering li .nice-select {
+  display: inline-block;
+  padding-right: 45px;
+  border: 1px solid black;
+  background: #2CDADD;
+}
+
+ul.filtering li .nice-select:after {
+  border-color: #000;
+}
+.jdate {
+  text-align: center;
+  border: 1px solid #00000040;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.jdate form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.jdate form label {
+  width: 48%;
+  font-weight: 500;
+}
+
+.jdate form label input {
+  width: 100%;
+  border: 1px solid #c5c5c5;
+  padding: 7px;
+  border-radius: 4px;
+  display: block;
+  margin-top: 5px;
+}
+
+.jdate p {
+  margin-bottom: 0;
+  margin-top: 20px;
+  color: #0000003b;
+}
+
+.grouthchart .section-title {
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.bottom-legends {
+  margin-top: -38px;
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+}
+.auto-wrp {
+  margin-top: 50px;
+} 
+.auto-wrp h4 {margin-bottom: 20px;}
+.autoconts {
+  margin-top: 60px;
+}
+
+.autoconts ul li {
+  display: inline-block;
+}
+
+.autoconts ul li a {
+  background: #FF356B;
+  border-radius: 10px;
+  margin-right: 10px;
+  max-width: 285px;
+  margin-top: 10px;
+  display: block;
+  box-sizing: border-box;
+  padding: 11px;
+  padding-right: 60px;
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+  height: 66px;
+  overflow: hidden;
+}
+
+.autoconts ul li a i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 34px;
+  opacity: .5;
+}
+.autoconts h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+form.sendForm {
+  max-width: 290px;
+  float: right;
+  margin-top: 50px;
+}
+form.sendForm ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form.sendForm ul li {
+  width: 110px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+form.sendForm ul li .ckbX {
+  margin: 0;
+}
+
+form.sendForm ul li .ckbX label:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  border: 1px solid #5c5c5c;
+  background: #EEEEEE;
+  top: 30px;
+  right: 0;
+}
+form.sendForm ul li .ckbX label {
+  width: 100%;
+}
+
+form.sendForm ul li .ckbX label:after {
+  bottom: auto;
+  right: 9px;
+  top: 30px;
+} 
+form.sendForm  button {
+  width: 100%;
+  border: none;
+  padding: 13px;
+  outline: none;
+  position: relative;
+  font-weight: 500;
+  background: #3ED598;
+  border-radius: 5px;
+}
+
+form.sendForm button i {
+  position: absolute;
+  right: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  opacity: .5;
+}
+.flter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flter span.ftl {
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/* ====================================================================
+      Reposrt-Grouth page END and  Report-OverALl Page STARTED
+==================================================================== */
+
+
+
+
+circle {
+  stroke-width: 40px;
+  fill: transparent;
+}
+circle:nth-child(1) {
+  stroke: #D6CF6E;
+}
+circle:nth-child(2) {
+  stroke: #14A38B;
+  stroke-dasharray: 187.831853 262.327412;
+  stroke-dashoffset: 134.539816;
+}
+circle:nth-child(3) {
+  stroke: #0880AE;
+  stroke-dasharray: 166.079633 360.079633;
+  stroke-dashoffset: 12.707963;
+}
+.report-details-area {
+  padding: 60px 0;
+}
+
+.report-details-area .section-title {
+  margin-top: 54px;
+}
+
+.det-blk {
+  margin-top: 50px;
+}
+.det-blk h4 {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #B65741;
+  background: #fff;
+  padding: 10px 0;
+}
+.det-blk .pie {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.det-blk h5 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.tless::after{
+  display: none;
+}
+
+
+
+
+/* ======================================================================
+      Report-Details page END and Report-Evaluation Page STARTED
+====================================================================== */
+
+
+
+
+
+.ass-blk {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.assimg {
+  padding: 30px;
+  background: #BCD1FF;
+}
+.asswrp {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  padding-left: 40px;
+}
+.hting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #6E798C;
+  margin-bottom: 25px;
+}
+
+.asswrp h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.asswrp p {
+  max-width: 500px;
+}
+
+.asswrp a {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  width: max-content;
+  color: #007AE9;
+  font-weight: 500;
+}
+.the-blk {
+  position: relative;
+  background: #fff;
+  border-top: 10px;
+  margin: 30px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.the-blk img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.the-wrp {
+  padding: 20px;
+}
+
+.thetitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.thetitle h5 {
+  margin: 0;
+}
+
+.thetitle ul {
+  display: flex;
+  align-items: center;
+}
+
+.thetitle ul li {
+  display: block;
+}
+
+.thetitle ul li a {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: 5px;
+  background: #007AE9;
+  color: #fff;
+  font-size: 12px;
+}
+
+.the-wrp span {
+  display: block;
+  margin-bottom: 25px;
+  color: #A5ADBB;
+}
+
+.the-wrp a.theme-btn {
+  border-radius: 5px;
+  margin: auto;
+  display: block;
+  width: max-content;
+  background: #FFAC30;
+  letter-spacing: 3px;
+}
+.the-blk a.qico {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+}
+.block-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.therates {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.therates ul li {
+  display: inline-block;
+  color: #FFC22B;
+  margin-right: 3px;
+}
+
+.therates  span {
+  font-size: 12px;
+  margin-bottom: 0 !IMPORTANT;
+  padding: 4px 10px;
+  background: #007ae9;
+  border-radius: 5px;
+  margin-left: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.all-blocks-big a.theme-btn {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  margin-top: 35px;
+}
+.report-evaluation-area {
+  padding: 60px 0;
+}
+.tbl-titles h4 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tbl-titles h4 small {
+  font-weight: 400;
+  font-size: 13px;
+}
+.dtl-area {
+  padding-bottom: 60px;
+}
+
+
+
+
+ 
+
+
+
+/* =================================================================
+      Report-Evaluation page END  Required-mateiral Page STARTED
+================================================================= */
+
+
+ 
+
+
+
+
+.vreq {
+  padding: 20px;
+  background: #f9b75178;
+  border-radius: 10px;
+}
+
+.vreq ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vreq h5 {
+  margin-left: 20px;
+}
+
+.vreq ul li {
+  margin-top: 10px;
+  padding-left: 25px;
+}
+.vreq ul li:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #262626;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.vreq ul li label:after {
+  left: -18px;
+  top: 5px;
+  border-width: 0 2px 2px 0 !important;
+  width: 5px !IMPORTANT;
+  height: 12px !important;
+}
+.mats-blk {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.mats-blk h5 {
+  font-size: 28px;
+}
+
+.meategs-blk {
+  background: #f9b75178;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+ul.prd {
+  display: block;
+  margin-top: 30px;
+}
+
+ul.prd li {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+ul.prd li img {
+  width: 80px !important;
+  margin-right: 10px;
+}
+
+.prwr p {
+  margin: 0;
+}
+
+.bmn {
+  margin-top: 20px;
+}
+
+.bmn ul li {
+  display: block;
+  text-align: center;
+  width: 130px;
+  text-align: center;
+}
+
+.bmn ul li img {
+  width: 50px !important;
+  margin: auto;
+}
+
+.bmn ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.meteg-sld .owl-nav {
+  position: absolute;
+  top: -65px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.meteg-sld .owl-nav div {
+  background: #F08C4D;
+  color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+}
+.meategs-blk h4 {
+  font-size: 30px;
+}
+
+.meategs-blk h4 span {
+  display: block;
+  opacity: .3;
+}
+.tmns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.tmns ul#myTab {
+  margin: 0;
+}
+
+.tmns a.theme-btn {
+  max-width: 260px;
+  text-align: center;
+  border-radius: 5px;
+  background: #ff356b;
+  color: #000;
+  margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+/* ======================================================
+      Required-mateiral page END Queries Page STARTED
+====================================================== */
+
+
+
+
+
+.endbtns a.theme-btn {
+  padding: 10px 40px;
+  border-radius: 5px;
+  background: red;
+}
+.allclsosdata {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+} 
+.datas {
+  margin-top: 20px;
+} 
+.datas button {
+  background: #FFAC30;
+  border: 1px solid #000;
+  outline: none;
+  padding: 15px 10px;
+  width: 100%;
+} 
+.datas ul li {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #000;
+  margin-top: 15px;
+}
+.datas:first-child{
+  width: 200px;
+}
+.datas:nth-child(2){
+  width: 185px;
+}
+.datas:nth-child(3){
+  width: 330px;
+}
+.datas:nth-child(4){
+  width: 330px;
+}
+.datas:last-child{
+  width: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================
+      Queries page END and Help Page STARTED
 ====================================================== */
 
 
@@ -2239,43 +3069,15 @@ ul.liprg li .prg .prg-control {
 
 
 
-
-
-
-
-
-
-
-
-/* ======================================================
-      Home page END and School Calender Page STARTED
-====================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ======================================================
-      Home page END and School Calender Page STARTED
-====================================================== */
-
-
-
-
-
-
+.resourceslibrary-area.help {
+  padding: 60px 0;
+  background: #2cdadd54;
+  margin: 0;
+}
+.rspwr {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 
 
@@ -2288,95 +3090,5 @@ ul.liprg li .prg .prg-control {
 
 
 /* ======================================================
-      Home page END and School Calender Page STARTED
-====================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ======================================================
-      Home page END and School Calender Page STARTED
-====================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ======================================================
-      Home page END and School Calender Page STARTED
-====================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ======================================================
-      Home page END and School Calender Page STARTED
-====================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ======================================================
-      Home page END and School Calender Page STARTED
-====================================================== */
-
-
-
-
-
-
-
-
-
-
+      Help page END and 
+====================================================== */ 

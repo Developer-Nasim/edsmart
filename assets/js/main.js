@@ -6,8 +6,8 @@
     $('.mobile-menu').toggleClass('siteBar');   
   }); 
 
+  // Nice-select
   $('select').niceSelect();
- 
 
   //  owlCarousel
   $(".plan-slider").owlCarousel({
@@ -138,10 +138,78 @@
     }
   });
 
+  //  owlCarousel
+  $(".all-blocks").owlCarousel({
+    loop: false,
+    margin: 30,
+    items: 4,
+    navText: [
+      '<i class="far fa-long-arrow-alt-left"></i>',
+      '<i class="far fa-long-arrow-alt-right"></i>'
+    ],
+    nav: false,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      767: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    }
+  });
 
-
-
-
+  //  owlCarousel
+  $(".all-blocks-big").owlCarousel({
+    loop: false,
+    margin: 30,
+    items: 4,
+    navText: [
+      '<i class="far fa-long-arrow-alt-left"></i>',
+      '<i class="far fa-long-arrow-alt-right"></i>'
+    ],
+    nav: false,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      767: {
+        items: 2
+      },
+      992: {
+        items: 3
+      }
+    }
+  });
+  
+  //  owlCarousel
+  $(".meteg-sld").owlCarousel({
+    loop: true, 
+    margin: 30,
+    items: 2,
+    navText: [
+      '<i class="far fa-long-arrow-alt-left"></i>',
+      '<i class="far fa-long-arrow-alt-right"></i>'
+    ],
+    stagePadding: 150,
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      767: {
+        items: 1
+      },
+      992: {
+        items: 2
+      }
+    }
+  });
   
   // Calendeer
   $(document).ready(function() {
@@ -314,51 +382,101 @@
     } 
   });
 
-
-
-
-
-  /* magnificPopup img view */
-  $(".popup-image").magnificPopup({
-    type: "image",
-    gallery: {
-      enabled: true
-    }
-  }); 
-
-  // counter
-  $('.counter').counterUp({
-    delay: 10,
-    time: 1000
+  // Ranges
+  $(".slider")
+    .slider({
+        max: 30
+    })
+    .slider("pips", {
+        first: "pip",
+        last: "pip"
   });
 
-  // isotop
-  $(".grid").imagesLoaded(function() {
-    // init Isotope
-    var $grid = $(".grid").isotope({
-      itemSelector: ".grid-item",
-      percentPosition: true,
-      masonry: {
-        // use outer width of grid-sizer for columnWidth
-        columnWidth: ".grid-item"
-      }
-    });
 
-    // filter items on button click
-    $(".portfolio-menu").on("click", "button", function() {
-      var filterValue = $(this).attr("data-filter");
-      $grid.isotope({ filter: filterValue });
-    });
+  // Chart
+  Highcharts.chart('chartOne', {
+      chart: {
+          type: 'spline'
+      },
+      title: {
+          text: ' '
+      },
+      subtitle: {
+          text: ' '
+      },
+      xAxis: {
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+          'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+      },
+      yAxis: {
+          title: {
+          text: ' '
+          } 
+      },
+      tooltip: {
+          crosshairs: false,
+          shared: false
+      },
+      plotOptions: {
+          spline: {
+              marker: {
+                  radius: 3,
+                  lineColor: '#BDDAF5',
+                  lineWidth: 1
+              }
+          }
+      },
+      series: [{
+          name: ' ',
+          marker: {
+          symbol: 'round' },
+          data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, {
+          y: 26.5, 
+          }, 23.3, 18.3, 13.9, 9.6]
 
-    //for menu active class
-    $(".portfolio-menu button").on("click", function(event) {
-      $(this)
-        .siblings(".active")
-        .removeClass("active");
-      $(this).addClass("active");
-      event.preventDefault();
-    });
+      }, {
+          name: ' ',
+          marker: {
+          symbol: 'round'},
+          data: [{
+          y: 3.9, 
+          }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+      }]
   });
-  
+  Highcharts.chart('chartOne2', {
+    chart: {
+        type: 'areaspline'
+    },
+    title: {
+        text: ' '
+    }, 
+    xAxis: {
+        categories: [
+        'Text',
+        'Text',
+        'Text',
+        'Text',
+        'Text',
+        ] 
+    },
+    yAxis: {
+        title: {
+        text: ' '
+        }
+    }, 
+    credits: {
+        enabled: false
+    },
+    plotOptions: {
+        areaspline: {
+        fillOpacity: 0.5
+        }
+    },
+    series: [ {
+        name: ' ',
+        data: [3, 5, 1, 6, 8]
+    }]
+  });
+ 
  
 })(jQuery);

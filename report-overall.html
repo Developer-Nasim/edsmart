@@ -155,13 +155,13 @@
             </div> 
         <!-- Dashboard-area END -->
 
-        <!-- resources-plan-area START -->
-        <div class="resources-plan-area">
+        <!-- report-grouth-area START -->
+        <div class="report-grouth-area">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-8 section-title">
-                        <h2>Learning Plans </h2>
-                        <p>View the upcoming latest events and Celebrations</p>
+                        <h2>Student Development Reports </h2>
+                        <p>Please select the dates or range of dates to list the upcoming events planned for this month</p>
                     </div>
                     <div class="col-lg-6 col-md-4 text-end">
                         <div class="selections">
@@ -171,282 +171,80 @@
                                 <option value="">Select School</option>
                             </select> 
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-3">
-                        <div class="left-cal">
-                            <i class="far fa-calendar-day"></i>
-                            <span>Week Starting <br>
-                                Sunday, Mar 5, 2021</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-5">
-                        <div class="mid-date">
-                            <ul>
-                                <li><i class="fas fa-angle-left"></i></li>
-                                <li><span>Week of <br>
-                                    5th March 2021</span></li>
-                                <li><i class="fas fa-angle-right"></i></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="right-cals justify-content-end">
-                            <a href="#">Week</a>
-                            <a href="#" class="active">Advanced Filters</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="days">
-                            <ul>
-                                <li><a href="#" style="background-color: #24B6BC;">Sunday<br>6</a></li>
-                                <li><a href="#" style="background-color: #fff;">Monday<br>5</a></li>
-                                <li><a href="#">Tuesday<br>7</a></li>
-                                <li><a href="#">Wednesday<br>8</a></li>
-                                <li><a href="#" style="background-color: #ffa0a5;">Thursday<br>9 <span>Holiday</span></a></li>
-                                <li><a href="#">Friday<br>10</a></li>
-                                <li><a href="#" style="background-color: #24B6BC;">Saturday<br>11</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="filters">
-                            <h4>Advanced Filters</h4>
-                            <div class="filter-selections"> 
-                                <select name="" id="">
-                                    <option value="">Activity Type</option>
-                                    <option value="">Activity Type 1</option>
-                                    <option value="">Activity Type 2</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="">Activity Month</option>
-                                    <option value="">Activity Type 1</option>
-                                    <option value="">Activity Type 2</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="">Activity Week</option>
-                                    <option value="">Activity Type 1</option>
-                                    <option value="">Activity Type 2</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="">Activity Day</option>
-                                    <option value="">Activity Type 1</option>
-                                    <option value="">Activity Type 2</option>
-                                </select>
-                                <button type="button">Enter your search code here</button>
-                            </div>
-                        </div>
                     </div> 
-                    <div class="col-lg-12">
-                        <p class="pagr">View Activities for Class: Myra international - Plagroup Section 1</p>
-                        <div class="resurse-slider owl-carousel">
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- resources-plan-area END -->
- 
-        <!-- new-area START -->
-        <div class="new-area">
-            <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h4>Whats New ?</h4>
+                        <div class="grouthchart">
+                            <div class="section-title">
+                                <h2>Student Overall Development Report </h2>
+                                <p>Please select the dates or range of dates to list the upcoming events planned for this month</p>
+                            </div>
+                            <div id="gcrt"></div>
+                            <div class="bottom-legends">Color Legend:</div>
+                        </div>
                     </div>
-                    <div class="new-slider owl-carousel"> 
-                        <div class="new-item">
-                            <div class="new-wrps">
-                                <h1>Take Control of 
-                                    your Child's
-                                    Holsitic Development</h1>
-                                <p>Uniquely crafted lesson plans and activities to align with school academic year, enriched content and tools for parents and teachers focuses to meet every child's learning needs.</p>
-                                <a href="#" class="theme-btn">Know More</a>
-                            </div>
-                            <img src="assets/img/new2.png" alt="">
-                        </div> 
-                        <div class="new-item">
-                            <div class="new-wrps">
-                                <h1>Take Control of 
-                                    your Child's
-                                    Holsitic Development</h1>
-                                <p>Uniquely crafted lesson plans and activities to align with school academic year, enriched content and tools for parents and teachers focuses to meet every child's learning needs.</p>
-                                <a href="#" class="theme-btn">Know More</a>
-                            </div>
-                            <img src="assets/img/new.png" alt="">
-                        </div> 
-                        <div class="new-item">
-                            <div class="new-wrps">
-                                <h1>Take Control of 
-                                    your Child's
-                                    Holsitic Development</h1>
-                                <p>Uniquely crafted lesson plans and activities to align with school academic year, enriched content and tools for parents and teachers focuses to meet every child's learning needs.</p>
-                                <a href="#" class="theme-btn">Know More</a>
-                            </div>
-                            <img src="assets/img/new.png" alt="">
-                        </div> 
+                    <div class="col-lg-12">
+                        <div class="auto-wrp">
+                            <h4>Automated Insights: </h4>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="autoconts">
+                            <ul>
+                                <li><a href="#">Publish Weekly Student Curriculum Progress Report  <i class="far fa-check-circle"></i></a></li>
+                                <li><a style="background-color: #FF8A00;" href="#">Unpublish Student Curriculum Progress Report <i class="far fa-exclamation-circle"></i></a></li>
+                                <li><a style="background-color: #2CDADD;" href="#">DownLoad PDF Report <i class="far fa-download"></i></a></li>
+                            </ul>
+                            <h4>Previously Published Student  Development Trends Report </h4>
+                            <p>Nursery class Weekly Time table for the  Week of 5th March 2021 was published on 4th Feb 2021 to parents. via SMS, EMAIL and Whatsapp</p>
+                            <p>Nursery class Weekly Time table for the  Week of 5th March 2021 was published on 4th Feb 2021 to parents. via SMS, EMAIL, Edu Connect and Whatsapp</p>
+                            <p>Nursery class Weekly Time table for the  Week of 5th March 2021 was published on 4th Feb 2021 to parents. via SMS, EMAIL and Whatsapp</p>
+                            <p>Nursery class Weekly Time table for the  Week of 5th March 2021 was published on 4th Feb 2021 to parents. via SMS, EMAIL, Edu Connect and Whatsapp</p>
+                            <p>Nursery class Weekly Time table for the  Week of 5th March 2021 was published on 4th Feb 2021 to parents. via SMS, EMAIL and Whatsapp</p>
+                            <p>Nursery class Weekly Time table for the  Week of 5th March 2021 was published on 4th Feb 2021 to parents. via SMS, EMAIL and Whatsapp</p> 
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <form action="" class="sendForm">
+                            <ul>
+                                <li>
+                                    <div class="ckbX"> 
+                                        <input type="checkbox" id="this1">
+                                        <label for="this1"><img src="assets/img/e.png" alt=""></label> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ckbX"> 
+                                        <input type="checkbox" id="this2">
+                                        <label for="this2"><img src="assets/img/e3.png" alt=""></label> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ckbX"> 
+                                        <input type="checkbox" id="this3">
+                                        <label for="this3"><img src="assets/img/e2.png" alt=""></label> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ckbX"> 
+                                        <input type="checkbox" id="this4">
+                                        <label for="this4"><img src="assets/img/e4.png" alt=""></label> 
+                                    </div>
+                                </li>
+                            </ul> 
+                            <button type="button">Notify Parents <i class="fas fa-user-ninja"></i></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- new-area START -->
-
-        <!-- Resource-library-area START -->
-        <div class="resourceslibrary-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="rslibrary-wrp">
-                            <h4>From Resource Library</h4>
-                            <p>Edsmart School Manager is comprehensive, state-of-art tools, detailed learning plans, reports which provides 360 degree view of student developemental. Integrated assessments
-                                modules provides real time growth reports</p> 
-                        </div>
-
-                        <div class="lrb-btn">
-                            <select name="" id="">
-                                <option value="">Select Categories ( tags)</option>
-                                <option value="">Select Categories ( post )</option>
-                                <option value="">Select Categories ( time )</option>
-                            </select>
-                            <select name="" id="">
-                                <option value="">Select by Age Groups</option>
-                                <option value="">Select by height Groups</option>
-                                <option value="">Select by Name Groups</option>
-                            </select> 
-                        </div>
-
-                    </div>
-                    
-                    <div class="col-lg-12"> 
-                        <div class="resurse-slider owl-carousel">
-                            <div class="rs-item">
-                                <div class="iism">
-                                    <img src="assets/img/rs.png" alt="">
-                                    <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                                </div>
-                                <div class="iism">
-                                    <img src="assets/img/rs.png" alt="">
-                                    <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                                </div>
-                            </div> 
-                            <div class="rs-item">
-                                <div class="iism">
-                                    <img src="assets/img/rs.png" alt="">
-                                    <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                                </div>
-                                <div class="iism">
-                                    <img src="assets/img/rs.png" alt="">
-                                    <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                                </div>
-                            </div> 
-                            <div class="rs-item">
-                                <div class="iism">
-                                    <img src="assets/img/rs.png" alt="">
-                                    <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                                </div>
-                                <div class="iism">
-                                    <img src="assets/img/rs.png" alt="">
-                                    <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                                </div>
-                            </div> 
-                            <div class="rs-item">
-                                <div class="iism">
-                                    <img src="assets/img/rs.png" alt="">
-                                    <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                                </div>
-                                <div class="iism">
-                                    <img src="assets/img/rs.png" alt="">
-                                    <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                                </div>
-                            </div> 
-                            <div class="rs-item">
-                                <div class="iism">
-                                    <img src="assets/img/rs.png" alt="">
-                                    <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                                </div>
-                                <div class="iism">
-                                    <img src="assets/img/rs.png" alt="">
-                                    <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <h4 class="mt-5">Popular Amognst Parents</h4>
-                        <div class="resurse-slider owl-carousel">
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <h4 class="mt-5">Newly Added</h4>
-                        <div class="resurse-slider owl-carousel">
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                            <div class="rs-item">
-                                <img src="assets/img/rs.png" alt="">
-                                <p>Boat yoga pose <br> <small>Tags: Yoga  600 views</small> </p>
-                            </div>
-                        </div>
-                    </div> 
-
-                </div>
-            </div>
-        </div>
-        <!-- Resource-library-area END -->
+        <!-- report-grouth-area END --> 
  
         <!-- Teachers-area START -->
         <div class="teachers-area quick-link-area">
@@ -495,12 +293,11 @@
         <!-- Teachers-area END --> 
 
         <!-- action-area START -->
-        <div class="action-area">
+        <div class="action-area tless">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="quick-link-wrp">
-                            <h4>Short Cuts for Teachers</h4>
+                        <div class="quick-link-wrp"> 
 
                             <div class="all-quick-blk"> 
                                 <a href="#" class="quick-blk">
@@ -533,8 +330,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-
+                    </div> 
                 </div>
             </div>
         </div>
@@ -613,17 +409,101 @@
         <script src="assets/js/jquery-3.4.1.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/isotope.pkgd.min.js"></script>  
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-        <script src="assets/js/counter.min.js"></script>
-        <script src="assets/js/waypoints.min.js"></script>  
-        <script src="assets/js/jquery.magnific-popup.min.js"></script> 
-        <script src="assets/js/jquery.nice-select.min.js"></script>  
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>  
+        <script src="assets/js/owl.carousel.min.js"></script> 
+        <script src="assets/js/jquery.nice-select.min.js"></script>   
         <script src="https://demos.creative-tim.com/fullcalendar/assets/js/jquery-ui.custom.min.js"></script> 
         <script src="https://demos.creative-tim.com/fullcalendar/assets/js/fullcalendar.js"></script>  
-        <script src="assets/js/plugins.js"></script>   
-        <script src="assets/js/main.js"></script>
+        <!-- Chart Js -->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script src="https://code.highcharts.com/themes/high-contrast-light.js"></script>
+ 
+        <script src="assets/js/main.js"></script> 
+        <script>
+            function Charts() { 
+                var colors = Highcharts.getOptions().colors; 
+                Highcharts.chart('gcrt', {
+                chart: {
+                    type: 'area'
+                },
+                accessibility: {
+                    description: ' '
+                },
+                title: {
+                    text: ' '
+                },
+                subtitle: {
+                    text: ' '
+                },
+                xAxis: {
+                    allowDecimals: false,
+                    labels: {
+                    formatter: function () {
+                        return this.value; // clean, unformatted number for year
+                    }
+                    },
+                    accessibility: {
+                    rangeDescription: 'R '
+                    }
+                },
+                yAxis: {
+                    title: {
+                    text: ' '
+                    },
+                    labels: {
+                    formatter: function () {
+                        return this.value / 1000 + 'k';
+                    }
+                    }
+                },
+                tooltip: {
+                    pointFormat: '{series.name} had stockpiled <b>{point.y:,.0f}</b><br/>warheads in {point.x}'
+                },
+                plotOptions: {
+                    area: {
+                    pointStart: 1940,
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                        hover: {
+                            enabled: true
+                        }
+                        }
+                    }
+                    }
+                },
+                series: [{
+                    name: 'Actual',
+                    data: [
+                    null, null, null, null, null, 6, 11, 32, 110, 235,
+                    369, 640, 1005, 1436, 2063, 3057, 4618, 6444, 9822, 15468,
+                    20434, 24126, 27387, 29459, 31056, 31982, 32040, 31233, 29224, 27342,
+                    26662, 26956, 27912, 28999, 28965, 27826, 25579, 25722, 24826, 24605,
+                    24304, 23464, 23708, 24099, 24357, 24237, 24401, 24344, 23586, 22380,
+                    21004, 17287, 14747, 13076, 12555, 12144, 11009, 10950, 10871, 10824,
+                    10577, 10527, 10475, 10421, 10358, 10295, 10104, 9914, 9620, 9326,
+                    5113, 5113, 4954, 4804, 4761, 4717, 4368, 4018
+                    ], 
+                }, {
+                    name: 'Planned',
+                    data: [null, null, null, null, null, null, null, null, null, null,
+                    5, 25, 50, 120, 150, 200, 426, 660, 869, 1060,
+                    1605, 2471, 3322, 4238, 5221, 6129, 7089, 8339, 9399, 10538,
+                    11643, 13092, 14478, 15915, 17385, 19055, 21205, 23044, 25393, 27935,
+                    30062, 32049, 33952, 35804, 37431, 39197, 45000, 43000, 41000, 39000,
+                    37000, 35000, 33000, 31000, 29000, 27000, 25000, 24000, 23000, 22000,
+                    21000, 20000, 19000, 18000, 18000, 17000, 16000, 15537, 14162, 12787,
+                    12600, 11400, 5500, 4512, 4502, 4502, 4500, 4500
+                    ]
+                }]
+                });
+            }
+            Charts()
+        </script>
     </body>
 </html>
