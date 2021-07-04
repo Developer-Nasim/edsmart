@@ -83,7 +83,9 @@ ul {
 
 li {
   list-style: none; }
-
+img{
+  max-width: 100%;
+}
  .padding{
    padding-right: 0;
  }
@@ -1568,31 +1570,31 @@ ul.lastlist li img {
   margin-bottom: 10px;
 }
 /* modal-content start */
-.modal-dialog {
+div#activities-modal { 
+  padding-right: 0 !important;
+}
+div#activities-modal .modal-dialog {
   max-width: 100%; 
   margin: 0;
 }
- .modal { 
-  padding-right: 0 !important;
-}
-.modal-header { 
+div#activities-modal .modal-header { 
   padding: 1rem 1rem;
   border-bottom: 1px solid #dee2e6;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   background: #FFAC30;
 }
-.modal-title{
+div#activities-modal .modal-title{
   color: #fff;
 }
-.modal-header button {
+div#activities-modal .modal-header button {
   padding: 0;
   border: none;
   background: no-repeat;
   color: #fff;
   font-size: 25px;
 }
-.modal-header button {
+div#activities-modal .modal-header button {
   padding: 0;
   border: none;
   background: no-repeat;
@@ -1624,6 +1626,42 @@ ul.filst li b {
   display: block;
   margin-bottom: -15px;
 }
+.act-left .img .ckbX input:checked + label img{
+  transform: scale(1.2);
+}
+ul.liprg .slider {
+  box-shadow: none;
+  background: #e8e8e8;
+  height: 15px;
+  width: 100%;
+  border: none;
+}
+
+ul.liprg .slider span.ui-slider-pip {
+  display: none;
+}
+
+ul.liprg .slider:after {
+  display: none;
+}
+ul.liprg .slider span.ui-slider-handle {
+  background: #ffac30;
+  border-radius: 20px;
+  top: 0;
+  box-shadow: none;
+  height: 100%;
+  width: 25px;
+  cursor: pointer;
+}
+ul.liprg .slider span.ui-slider-handle::before,
+ul.liprg .slider span.ui-slider-handle::after{
+  display: none;
+}
+
+.act-left .img span.ckbX label::after{
+  display: none;
+}
+
 
 .lblk .img span {
   display: inline-block;
@@ -1712,8 +1750,58 @@ ul.liprg li .prg .prg-control {
   padding-top: 25px;
 }
 
+div#examples-modal .modal-header , 
+div#video-modal .modal-header {
+  padding: 0;
+  border: none;
+  text-align: right;
+  position: relative;
+}
 
+div#examples-modal .modal-header button,
+div#video-modal .modal-header button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: auto;
+}
 
+div#examples-modal .modal-body ,
+div#video-modal .modal-body {
+  padding: 0;
+  text-align: center;
+  margin-top: 15px;
+}
+
+div#examples-modal .modal-body img,
+div#video-modal .modal-body iframe {
+  display: block;
+  width: 100%;
+}
+
+div#examples-modal .modal-content,
+div#video-modal .modal-content {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+div#examples-modal:after,
+div#video-modal:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: -1;
+  opacity: .5;
+}
 
 
 
