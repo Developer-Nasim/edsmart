@@ -1576,6 +1576,8 @@ ul.lastlist li img {
 /* modal-content start */
 div#activities-modal { 
   padding-right: 0 !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
 }
 div#activities-modal .modal-dialog {
   max-width: 100%; 
@@ -2051,7 +2053,9 @@ div#video-modal:after {
   .switch_box input[type="checkbox"].switch_1:checked:after{
 	left: calc(100% - 1.5em);
   }
-	
+	.activity-body {
+    padding-bottom: 40px;
+}
 
 
 
