@@ -1607,7 +1607,15 @@ div#activities-modal .modal-header button {
   color: #fff;
   font-size: 25px;
 }
-
+.anblk {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 70px;
+}
+.anblk img {
+  display: block;
+  margin-bottom: 5px;
+}
 .ltitle {
   display: flex;
   align-items: center;
@@ -2159,7 +2167,8 @@ div#video-modal:after {
   object-fit: cover;
 }
 
-.user-slider .owl-nav .owl-prev,.user-slider .owl-nav .owl-next {
+.user-slider .owl-nav .owl-prev,
+.user-slider .owl-nav .owl-next {
   width: 60px;
   height: 60px;
   background: #F08C4D;
@@ -2170,9 +2179,8 @@ div#video-modal:after {
   color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
-  left: -80px;
-  transform: translateY(-50%);
+  top: 10px;
+  left: -80px; 
 }
 
 .user-slider .owl-nav .owl-next {
@@ -2187,9 +2195,12 @@ div#video-modal:after {
   padding: 10px 20px;
   background: #fff;
 }
-
+.assins-blk.fblk {
+  margin-top: 175px;
+}
 .assins-blk {
   display: flex;
+  margin-top: 65px;
   align-items: center;
 }
 
@@ -2200,7 +2211,7 @@ div#video-modal:after {
 }
 
 .assins-blk img {
-  width: 125px;
+  width: 110px;
   margin-right: 20px;
 }
 .mr0{

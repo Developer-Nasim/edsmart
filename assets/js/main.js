@@ -127,7 +127,7 @@
     dots: false,
     responsive: {
       0: {
-        items: 4
+        items:3
       },
       767: {
         items: 5
