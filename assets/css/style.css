@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400; 
+  font-weight: 400;
   color: #000000;
-  font-size: 16px; 
+  font-size: 16px;
+  padding-top: 232px;
+  position: relative;
 }
-
 .body-back{
   background-image: url(../img/body-back.png);
   background-size: cover;
@@ -96,10 +97,13 @@ img{
 
 
 .header-area {
-  padding-top: 15px; 
+  padding-top: 15px;
   width: 100%;
-  z-index: 99; 
+  z-index: 99;
   background: #FFAC30;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .header-area hr {
   margin-top: 25px; 
