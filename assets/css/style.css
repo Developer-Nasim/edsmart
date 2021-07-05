@@ -2753,7 +2753,9 @@ circle:nth-child(3) {
 .tless::after{
   display: none;
 }
-
+div#staticBackdrop .modal-body iframe {
+  width: 100%;
+}
 
 
 
@@ -2773,7 +2775,12 @@ circle:nth-child(3) {
   overflow: hidden;
   margin-top: 30px;
 }
-
+.qico.ckbX input:checked + label::after {
+  display: none;
+}
+.qico.ckbX input:checked + label i {
+  color: #f8593b;
+}
 .assimg {
   padding: 30px;
   background: #BCD1FF;
