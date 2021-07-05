@@ -2283,9 +2283,6 @@ div#video-modal:after {
   margin-left: auto;
   margin-right: 20px;
   }
-  .gsallclsosdata{
-    overflow: auto;
-  }
 
 
  
@@ -2972,27 +2969,9 @@ circle:nth-child(3) {
 
 .vreq ul li {
   margin-top: 10px;
-  padding-left: 25px;
+  padding-left: 0px;
 }
-.vreq ul li:before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #262626;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-}
-
-.vreq ul li label:after {
-  left: -18px;
-  top: 5px;
-  border-width: 0 2px 2px 0 !important;
-  width: 5px !IMPORTANT;
-  height: 12px !important;
-}
+ 
 .mats-blk {
   text-align: center;
   margin-top: 40px;
@@ -3159,9 +3138,54 @@ ul.prd li img {
   width: 130px;
 }
 
+.gsallclsosdata{
+  overflow: auto;
+  margin-bottom: 50px;
+}
+.gsallclsosdata table{
+  width: 1296px;
+}
+.gsallclsosdata thead th {
+  padding-right: 10px;
+}
+.gsallclsosdata thead th:first-child,
+.gsallclsosdata thead th:nth-child(2){
+  width: 190px;
+} 
+.gsallclsosdata thead th:last-child{
+  width: 120px;
+}
+.gsallclsosdata thead th span {
+  border: 1px solid black;
+  background: #ffac30;
+  height: 60px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  text-align: center;
+}
+.gsallclsosdata tbody td span {
+  display: block;
+  height: 55px;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  font-size: 14px;
+  overflow: hidden;
+}
 
-
-
+.gsallclsosdata tbody td {
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.gsallclsosdata tbody {
+  background: none;
+}
 
 
 

@@ -19,6 +19,57 @@
         <link rel="stylesheet" href="https://demos.creative-tim.com/fullcalendar/assets/css/fullcalendar.print.css">  
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css"> 
+        <style>
+            [type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #143d59;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+        </style>
     </head>
     <body>
         
@@ -214,16 +265,16 @@
                             <div class="tmns"> 
                                 <ul class="nav" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="Today-tab" data-bs-toggle="tab" data-bs-target="#Today" type="button" role="tab" aria-controls="Today" aria-selected="true">Today</button>
+                                        <button class="nav-link active" id="Today-tab" data-bs-toggle="tab" data-bs-target="#Today" type="button" role="tab" aria-controls="Today" aria-selected="true">Today</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="Daily-tab" data-bs-toggle="tab" data-bs-target="#Daily" type="button" role="tab" aria-controls="Daily" aria-selected="false">Daily</button>
+                                        <button class="nav-link" id="Daily-tab" data-bs-toggle="tab" data-bs-target="#Daily" type="button" role="tab" aria-controls="Daily" aria-selected="false">Daily</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="Weekly-tab" data-bs-toggle="tab" data-bs-target="#Weekly" type="button" role="tab" aria-controls="Weekly" aria-selected="false">Weekly</button>
+                                        <button class="nav-link" id="Weekly-tab" data-bs-toggle="tab" data-bs-target="#Weekly" type="button" role="tab" aria-controls="Weekly" aria-selected="false">Weekly</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="Monthly-tab" data-bs-toggle="tab" data-bs-target="#Monthly" type="button" role="tab" aria-controls="Monthly" aria-selected="false">Monthly</button>
+                                        <button class="nav-link" id="Monthly-tab" data-bs-toggle="tab" data-bs-target="#Monthly" type="button" role="tab" aria-controls="Monthly" aria-selected="false">Monthly</button>
                                     </li>
                                 </ul>
                                 <a href="#" class="theme-btn">View Material Timetable Report</a>
@@ -233,22 +284,22 @@
                                      <div class="row">
                                          <div class="col-lg-12">
                                              <div class="vreq">
-                                                 <h5>View Only </h5> 
+                                                 <h5>View Only </h5>  
                                                  <ul>
-                                                     <li class="ckbX">
-                                                        <input type="checkbox" id="brk">
+                                                     <li>
+                                                        <input type="radio" id="brk" name="radio-group">
                                                         <label for="brk">Books Required</label>
                                                     </li>
-                                                     <li class="ckbX">
-                                                        <input type="checkbox" id="brk2">
+                                                     <li>
+                                                        <input type="radio" id="brk2" name="radio-group">
                                                         <label for="brk2">Learning Aids</label> 
                                                     </li>
-                                                     <li class="ckbX">
-                                                        <input type="checkbox" id="brk3">
+                                                     <li>
+                                                        <input type="radio" id="brk3" name="radio-group">
                                                         <label for="brk3">Teacher to Make</label> 
                                                     </li>
-                                                     <li class="ckbX">
-                                                        <input type="checkbox" id="brk4">
+                                                     <li>
+                                                        <input type="radio" id="brk4" name="radio-group">
                                                         <label for="brk4">Rest All</label> 
                                                     </li>
                                                  </ul>
