@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="assets/css/nice-select.css">  
         <link rel="stylesheet" href="https://demos.creative-tim.com/fullcalendar/assets/css/fullcalendar.css">  
         <link rel="stylesheet" href="https://demos.creative-tim.com/fullcalendar/assets/css/fullcalendar.print.css">  
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+        <link rel="stylesheet" href="assets/css/jquery-ui-slider-pips.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css"> 
     </head>
@@ -1215,22 +1217,58 @@
             </div>
         </div>
 
+ 
+        <!-- Image Modal -->
+        <div class="modal fade" id="examples-modal" tabindex="-1" aria-labelledby="examplesmodalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> 
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/img/rmg.png" alt="">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    
+        <!-- Video Modal -->
+        <div class="modal fade" id="video-modal" tabindex="-1" aria-labelledby="videomodalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> 
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe height="315" src="https://www.youtube.com/embed/FLd1nR6Vzk0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
     
 		<!-- JS here --> 
         <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/isotope.pkgd.min.js"></script>  
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-        <script src="assets/js/counter.min.js"></script>
-        <script src="assets/js/waypoints.min.js"></script>  
+        <script src="assets/js/owl.carousel.min.js"></script> 
         <script src="assets/js/jquery.magnific-popup.min.js"></script> 
-        <script src="assets/js/jquery.nice-select.min.js"></script>  
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>  
+        <script src="assets/js/jquery.nice-select.min.js"></script>   
         <script src="https://demos.creative-tim.com/fullcalendar/assets/js/jquery-ui.custom.min.js"></script> 
         <script src="https://demos.creative-tim.com/fullcalendar/assets/js/fullcalendar.js"></script>  
         <script src="assets/js/plugins.js"></script>   
+        <script src="assets/js/jquery-ui-slider-pips.min.js"></script>    
+         
+        <script>
+            /* magnificPopup img view */
+            $(".popupimg").magnificPopup({
+                type: "image",
+                gallery: {
+                enabled: true
+                }
+            }); 
+        </script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
