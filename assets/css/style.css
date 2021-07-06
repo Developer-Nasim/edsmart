@@ -14,7 +14,10 @@ body {
   background-position: center;
   background-repeat: repeat;
 }
-  
+video,canvas{
+  object-fit: cover;
+  max-width: 100%;
+}
 button {
   cursor: pointer; }
 
@@ -1377,7 +1380,35 @@ p.copyright-text {
 .mid-date {
   text-align: center;
 }
+div#cameraAccess-modal .modal-header {
+  text-align: right;
+  display: block;
+}
 
+div#cameraAccess-modal .modal-header button {
+  border-radius: 100px;
+  width: 40px;
+  border: none;
+  height: 40px;
+  padding: 0;
+  line-height: 42px;
+  font-size: 20px;
+  background: #d50707;
+  color: #fff;
+}
+
+div#cameraAccess-modal .modal-body button#picture {
+  border: none;
+  padding: 8px 20px;
+  display: block;
+  border-radius: 1px;
+  text-transform: capitalize;
+  font-weight: 500;
+  background: #1d92fd;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
 .mid-date ul {
   text-align: center;
   display: flex;
@@ -1816,7 +1847,32 @@ div#video-modal:after {
   z-index: -1;
   opacity: .5;
 }
+.head-lefts {
+  display: flex;
+} 
+.tbt {
+  margin-right: 100px; 
+  display: flex;
+}
 
+.tbt a {
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 30px;
+}
+
+.tbt a span {
+  padding: 10px;
+  background: white;
+  width: max-content;
+  margin: auto;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  border-radius: 3px;
+}
 
 
 
